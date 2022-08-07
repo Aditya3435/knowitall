@@ -15,9 +15,10 @@ body {
     flex-wrap: wrap;
     align-items: center;
     height: 4rem;
-    background:  rgba(255, 255, 255, 0.101)
+    background:  rgba(255, 255, 255, 0.101);
 }
 .search-section input {
+    color: black;
     border-radius: 4rem;
     padding: 0.7rem;
     width: 25rem;
@@ -42,16 +43,21 @@ nav {
     left: 2rem;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255,0.085);
+    background-color: rgba(255, 255, 255, 0.0055);
     width: 5rem;
-    height: 30rem;
+    height: 31rem;
     border-radius: 5rem;
+    
 }
 
 nav svg {
     margin: 1.6rem;
 }
-#fact-display {
+nav a:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-out;
+}
+#fact-display, #map-display, #adm-display {
     display: none;
 }
 .home-section {
@@ -88,3 +94,128 @@ nav svg {
     font-size: 1.6vw;
     margin-top: 2rem;
 }
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.home-btn:hover::after  {
+    content: 'Home';
+    font-size: 0.8rem;
+    position: absolute;
+    top: 3.5rem;
+    right:1.5rem;
+}
+.info-btn:hover::after  {
+    content: 'Info';
+    font-size: 0.8rem;
+    position: absolute;
+    top: 3.5rem;
+    right:2rem;
+}
+.img-btn:hover::after  {
+    content: 'Images';
+    font-size: 0.8rem;
+    position: absolute;
+    top: 3.5rem;
+    right:1.3rem;
+}
+.map-btn:hover::after  {
+    content: 'Map';
+    font-size: 0.8rem;
+    position: absolute;
+    top: 3.5rem;
+    right:1.9rem;
+}
+
+.places-btn:hover::after  {
+    content: 'Places around';
+    font-size: 0.8rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 1.25rem;
+}
+.adm-btn:hover::after  {
+    content: 'Admission';
+    font-size: 0.7rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 0.9rem;
+}
+
+
+/* shubham's part */
+
+#con1{
+    border: 3px solid red;
+    border-radius: 3px;
+    width: 15vw;
+    height: 8vh;
+    font-size: large;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;  
+}
+
+.reviews{
+    /* border: 2px solid green; */
+    /* margin: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+.reviews .card{
+    border-radius: 1rem;
+    position: relative;
+    margin: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+    height: 22rem;
+    padding: 0.5rem;
+    color: wheat;
+    background: rgba(255, 255, 255, 0.24);
+    font-family: cursive;
+    font-style: italic;
+    transition: 0.8s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card span{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: transparent;
+}
+.card .content{
+    /* display: list-item; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding: 1px 2px;
+    margin-bottom: 2vh;
+    font-style: italic;
+
+}
+.name{
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+
+    
+}
+
