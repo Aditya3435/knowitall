@@ -57,7 +57,7 @@ nav a:hover {
     transform: scale(1.1);
     transition: all 0.5s ease-out;
 }
-#fact-display, #map-display, #adm-display {
+#fact-display, #map-display, #adm-display, #image-display {
     display: none;
 }
 .home-section {
@@ -145,6 +145,15 @@ nav a:hover {
     left: 0.9rem;
 }
 
+.image-slider {
+    width: 24vw;
+}
+
+.item img {
+    width: 20rem;
+
+}
+
 
 /* shubham's part */
 
@@ -163,8 +172,7 @@ nav a:hover {
 }
 
 .reviews{
-    /* border: 2px solid green; */
-    /* margin: 1rem; */
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,7 +208,6 @@ nav a:hover {
     background-color: transparent;
 }
 .card .content{
-    /* display: list-item; */
     align-items: center;
     justify-content: center;
     position: relative;
