@@ -98,7 +98,7 @@ nav a:hover {
 .map {
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .home-btn:hover::after  {
@@ -109,11 +109,11 @@ nav a:hover {
     right:1.5rem;
 }
 .info-btn:hover::after  {
-    content: 'Info';
+    content: 'Specials';
     font-size: 0.8rem;
     position: absolute;
     top: 3.5rem;
-    right:2rem;
+    right:1rem;
 }
 .img-btn:hover::after  {
     content: 'Images';
@@ -123,11 +123,11 @@ nav a:hover {
     right:1.3rem;
 }
 .map-btn:hover::after  {
-    content: 'Map';
+    content: '360 View';
     font-size: 0.8rem;
     position: absolute;
     top: 3.5rem;
-    right:1.9rem;
+    left: 0.9rem;
 }
 
 .places-btn:hover::after  {
@@ -146,7 +146,9 @@ nav a:hover {
 }
 
 .image-slider {
-    width: 24vw;
+    /* width: 24vw; */
+    max-width: 50vw;
+    margin: 2rem auto;
 }
 
 .item img {
