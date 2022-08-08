@@ -38,5 +38,12 @@ document.querySelector('.img-btn').addEventListener('click', () => {
     getSiblings(document.getElementById('image-display')).forEach((siblings => {
         siblings.style.display = "none";
     }));
-    document.querySelector('nav').style = "z-index: 2";
 })
+
+document.querySelector('.places-btn').addEventListener('click', () => {
+    document.getElementById('places-display').style.setProperty('display', 'initial');
+    getSiblings(document.getElementById('places-display')).forEach((siblings => {
+        siblings.style.display = "none";
+    }))
+})
+
