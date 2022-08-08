@@ -6,7 +6,7 @@
     color: #fff;
 }
 body {
-    background:  #16003B;
+    background:  #191919;
 }
 
 .search-section {
@@ -222,7 +222,10 @@ nav a:hover {
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
-
     
 }
 
+/* h5 {
+    margin: 2rem 0 0.5rem 0;
+    text-align: center;
+} */
